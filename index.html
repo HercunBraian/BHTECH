@@ -1,12 +1,545 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BH TECH</title>
+    <title>BHTECH</title>
+
+    <!-- ############# CSS ############## -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- ############# FontAwesome Icons ################ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+
+    <!-- ############# Fonts Reboto ################ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    
+
+    <!-- ############# Comienzo de Header ################ -->
+
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/nav/navlogo.png" alt=""></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ############# Fin de Header ################ -->
+
+    <!-- ############# Comienzo de Main ################ -->
+    <main class="site-main">
+        <!-- ############# Comienzo de Banner ################ -->
+
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <img src="img/header/logo2.png" alt="LogoHeader">
+                        <h1 class="title-text text-center text-uppercase">Arma tu Pc Gamer</h1>
+                        <h2 class="title-text text-center text-uppercase">El mejor asesoramiento</h1>
+                            <div class="site-buttons">
+                                <div class="d-flex flex-row flex-wrap justify-content-center">
+                                    <button type="button"
+                                        class="btn button primary-button mr-4 text-uppercase ">Productos</button>
+                                    <button type="button"
+                                        class="btn button primary-button mr-4 text-uppercase ">Servicios</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="img/header/pc.png" alt="Banner-Img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ############# Fin de Banner ################ -->
+
+        <!-- ############# Inicio Categorias ################ -->
+
+        <section class="categorias">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center cat-titulo">
+                        <h2 class="linea"><span>CATEGORIAS</span></h2>
+                    </div>
+                    <div class="col-lg-12 categorias__row">
+                        <div class="box-categorias">
+                            <div class="img__titulo">
+                                <h3><a href="productos.html#cpugamer">CPU GAMER</a></h3>
+                            </div>
+                            <img src="img/categorias/cpu.jpg" alt="CPU Gamer">
+                        </div>
+                        <div class="box-categorias">
+                            <div class="img__titulo">
+                                <h3><a href="productos.html#perifericos">PERIFERICOS</a></h3>
+                            </div>
+                            <img src="img/categorias/perifericos.jpg" alt="Perifericos">
+                        </div>
+                        <div class="box-categorias">
+                            <div class="img__titulo">
+                                <h3><a href="productos.html#consolas">CONSOLAS</a></h3>
+                            </div>
+                            <img src="img/categorias/consolas.jpg" alt="Consolas">
+                        </div>
+                        <div class="box-categorias">
+                            <div class="img__titulo">
+                                <h3><a href="productos.html#combos">COMBOS GAMERS</a></h3>
+                            </div>
+                            <img src="img/categorias/combo.jpg" alt="Combo Gamer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- nicooooooooooooo-->
+
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <h2 class="linea"><span>CATEGORIAS</span> </h2>
+                </div>
+            </div>
+
+            <div class="row bg-danger d-flex ">
+
+                <div class="col col-sm-6 col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="img/categorias/cpu.jpg" class="" alt="..." style="min-width: 12rem;">
+                        <div class="card-img-overlay d-flex ">
+                            <p class="mx-auto my-auto">CPU GAMER</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col col-sm-6 col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="img/categorias/perifericos.jpg" class="" alt="..." style="min-width: 12rem;">
+                        <div class="card-img-overlay d-flex ">
+                            <p class="mx-auto my-auto">CPU GAMER</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-sm-6 col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="img/categorias/consolas.jpg" class="" alt="..." style="min-width: 12rem;">
+                        <div class="card-img-overlay d-flex ">
+                            <p class="mx-auto my-auto">CPU GAMER</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-sm-6 col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="img/categorias/combo.jpg" class="" alt="..." style="min-width: 12rem;">
+                        <div class="card-img-overlay d-flex ">
+                            <p class="mx-auto my-auto">CPU GAMER</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ############# Fin de Categorias ################ -->
+
+        <!-- ############# Inicio Productos ################ -->
+
+        <section class="productos">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center cat-titulo">
+                        <h2 class="linea"><span>PRODUCTOS</span></h2>
+                    </div>
+                    <div class="col-lg-12 categorias__row">
+                        <article class="producto__row">
+                            <img src="img/productos/ram.png" class="producto__img" alt="Memoria Ram">
+                            <h4>Memoria Ram Patriot 32GB DDR4 3200mHZ Viper RGB</h4>
+                            <div class="productos__row--etiquetas">
+                                <p class="producto__precio">$20999.00</p>
+                                <p class="producto__carrito"><a href="#">Comprar</a></p>
+                            </div>
+                        </article>
+
+                        <article class="producto__row">
+                            <img src="img/productos/pcgamer2.png" class="producto__img" alt="Pc Gamer">
+                            <h4>PC Gamer Armada Intel Core i5 8GB + GTX 1660 6GB</h4>
+                            <div class="productos__row--etiquetas">
+                                <p class="producto__precio">$20999.00</p>
+                                <p class="producto__carrito"><a href="#">Comprar</a></p>
+                            </div>
+                        </article>
+
+                        <article class="producto__row">
+                            <img src="img/productos/mause.png" class="producto__img" alt="Mause">
+                            <h4>Mause Redragon Griffin M607 RGB USB 7200DPI</h4>
+                            <div class="productos__row--etiquetas">
+                                <p class="producto__precio">$20999.00</p>
+                                <p class="producto__carrito"><a href="#">Comprar</a></p>
+                            </div>
+                        </article>
+
+                        <article class="producto__row">
+                            <img src="img/productos/auriculares.png" class="producto__img" alt="Auriculares">
+                            <h4>Auriculares Logitech G733 Lightspeed RGB Blue</h4>
+                            <div class="productos__row--etiquetas">
+                                <p class="producto__precio">$20999.00</p>
+                                <p class="producto__carrito"><a href="#">Comprar</a></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ############# Fin de Productos ################ -->
+
+        <!-- ############# Inicio de Productos Destacados ################ -->
+
+        <section class="site-destacado">
+            <div class="container-fluid h-100">
+                <div class="row h-100">
+                    <div class="col col-lg-6 col-md-12 bg-warning d-flex justify-content-center">
+                        <div class="bg-danger d-flex justify-content-center align-items-center">
+                            <img src="img/destacado/ps5destacado.png" alt="PS5 Destacado" class=""
+                                style="max-width: 100%; min-width: 14rem; max-height: 18rem;">
+                        </div>
+                    </div>
+                    <div class="col  col-lg-6 col-md-12 p-0 d-flex  align-items-center">
+                        <ul class="d-flex bg-primary justify-content-center mx-auto p-3 rounded-3 flex-wrap galeria">
+                            <li class="mx-auto" style="list-style: none;">
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                            </li>
+                            <li class="mx-auto" style="list-style: none;">
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                            </li>
+                            <li class="mx-auto" style="list-style: none;">
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                            </li>
+                            <li class="mx-auto" style="list-style: none;">
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                                <div class="col-4"><a href="#"><img src="img/destacado/juegos/s2.png"
+                                            class="rounded-3 border m-2" style="max-height: 5rem;" alt=""></a></div>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ############# Fin Productos Destacados ################ -->
+
+        <!-- ############# Inicio Servicio Tecnico ################ -->
+        <section class="site-servicios">
+            <div class="container">
+                <div class="col-lg-12 text-center  ">
+                    <img src="img/servicios/logoservicio.png" class="logo-servicio" alt="HB-TECH LOGO">
+                    <h1 class="text-uppercase title-text">Servicios</h1>
+                    <h5>Mantenimientos, Asesoramiento, Reparacion PC</h5>
+                    <p>Nuestro servicio de revisión, reparación, formateo, mantenimiento preventivo y
+                        actualización de computadoras se distingue por el amplio conocimiento que
+                        BHIT ha acumulado a través de v arios años de estar en contacto
+                        con el hardware de las marcas más reconocidas de alto desempeño.</p>
+                </div>
+            </div>
+            </div>
+            <div class="container servicios-lista ">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 col-sm-12 d-flex">
+                        <div class="servicios mx-auto">
+                            <div class="servicios-img text-center py-4">
+                                <img src="img/servicios/repair.png" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">Reparacion PC</h5>
+                                <p class="card-text text-secondary">Si tu computadora no enciende, o tiene algún
+                                    problema de
+                                    funcionamiento por daños en algún componente, nosotros podemos diagnosticar tu PC y
+                                    determinar cuál es
+                                    la causa precisa del fallo para solucionarlo con prontitud.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-12 d-flex">
+                        <div class="servicios mx-auto">
+                            <div class="servicios-img text-center py-4">
+                                <img src="img/servicios/mantenimiento.png" alt="">
+                            </div>
+                            <div class="card-body text-center ">
+                                <h5 class="card-title text-uppercase font-roboto">Mantenimiento</h5>
+                                <p class="card-text text-secondary">Es recomendable realizar de manera periódica un
+                                    servicio técnico de
+                                    limpieza profunda y revisión de funcionamiento a todos los equipos de cómputo para
+                                    alargar su vida
+                                    útil y detectar problemas a tiempo.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-12 d-flex">
+                        <div class="servicios mx-auto">
+                            <div class="servicios-img text-center py-4">
+                                <img src="img/servicios/visita.png" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">Visitas</h5>
+                                <p class="card-text text-secondary">Si te encuentras ubicado dentro de la Ciudad de
+                                    Buenos Aires,
+                                    podemos coordinar visitas semestrales para realizar mantenimientos.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-12 d-flex">
+                        <div class="servicios mx-auto">
+                            <div class="servicios-img text-center py-4">
+                                <img src="img/servicios/asesoramiento.png" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">Asesoramiento</h5>
+                                <p class="card-text text-secondary">Si tu computadora requiere mantenimiento preventivo
+                                    y adicionalmente
+                                    mejorar el desempeño de tu equipo, podemos asesorarte para elegir los mejores
+                                    componentes.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ############# Fin Servicio Tecnico ################ -->
+
+        <footer class="text-center text-lg-start text-white" style="background-color: #382659">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                <img src="img/logofooter.png" class="logo_footer" alt="Logo Footer BHTECH">
+                            </h6>
+                            <p>
+                                En HB-TECH buscamos destacar por nuestro conocimiento e intentamos establecernos como la
+                                opción ideal para sus compras de tecnología. Todos nuestros vendedores se encuentran
+                                altamente capacitados para asesorarlo y ofrecerle exactamente lo que necesita el
+                                cliente.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">PRODUCTOS</h6>
+                            <p>
+                                <a href="productos.html#cpugamer" class="text-white">CPU GAMER</a>
+                            </p>
+                            <p>
+                                <a href="productos.html#perifericos" class="text-white">PERIFERICOS</a>
+                            </p>
+                            <p>
+                                <a href="productos.html#consolas" class="text-white">CONSOLAS</a>
+                            </p>
+                            <p>
+                                <a href="productos.html#combos" class="text-white">COMBOS GAMERS</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                ENLACES
+                            </h6>
+                            <p>
+                                <a href="#" class="text-white">INICIO</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white">PRODUCTOS</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white">SERVICIO TECNICO</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white">NOSOTROS</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white">CONTACTO</a>
+                            </p>
+                        </div>
+
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                            <p><i class="fas fa-home mr-3"></i> Buenos Aires, Argentina</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+
+                <hr class="my-3">
+
+                <!-- Section: Copyright -->
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <!-- Grid column -->
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <!-- Copyright -->
+                            <div class="p-3">
+                                © 2022 Copyright:
+                                <a class="text-white" href="https://hercunbraian.github.io/BHTECH/">BHTECH</a>
+                            </div>
+                            <!-- Copyright -->
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <!-- Facebook -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="fab fa-twitter"></i></a>
+
+                            <!-- Google -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="fab fa-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                </section>
+                <!-- Section: Copyright -->
+            </div>
+            <!-- Grid container -->
+        </footer>
+        <!-- Footer -->
+
+    </main>
+    <!-- ############# Fin de Main ################ -->
+    <!-- ############# Js Jquery ################ -->
+    <script src="js/jQueryv3.6.0.js"></script>
+
+    <!-- ############# Js Bootstrap ################ -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- ############# Js Main ################ -->
+    <script src="js/main.js"></script>
+
+
+
+    <!-- <div class="container-fluid">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+</div>
+-->
+
+
+
 </body>
+
 </html>

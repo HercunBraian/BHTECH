@@ -7958,7 +7958,7 @@ button:active button:hover .btn:active,
   width: 100%; }
 
 /*############ Fin Banner #############*/
-/*############ Inicio Categorias Index #############*/
+/*############ Inicio Categorias #############*/
 .cat-titulo h2, .cat-titulo .h2 {
   color: black;
   letter-spacing: 0.05em;
@@ -8145,3 +8145,33 @@ button:active button:hover .btn:active,
 /*############ Fin de Servicio Tecnico #############*/
 .site-main .site-servicios .row {
   justify-content: center; }
+
+/*############ Inicio Media Query - Responsive #############*/
+@media only screen and (max-width: 340px) {
+  .header_area .main-menu .navbar,
+  .header_area .main-menu .navbar .navbar-brand,
+  .site-main .subscribe-us-area .subscribe {
+    padding: 2%;
+    margin: 0%; }
+  .site-main .site-banner .site-title h1, .site-main .site-banner .site-title .h1 {
+    font-size: 30px; } }
+
+@media only screen and (max-width: 768px) {
+  .site-main .site-servicios {
+    justify-content: center; }
+  .logo_footer {
+    width: 100%; } }
+
+@media only screen and (max-width: 1910px) {
+  .header_area .main-menu .navbar {
+    padding: 1rem; }
+  .container {
+    max-width: 90%; }
+  .site-main .brand-area,
+  .site-main .services-area .services-title,
+  .site-main .about-area {
+    padding: 3% 4%; } }
+
+@media only screen and (max-width: 320px) {
+  .galeria {
+    width: 80%; } }
