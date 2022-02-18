@@ -7985,56 +7985,23 @@ button:active button:hover .btn:active,
   background: #fff;
   padding: 0 15px; }
 
-.categorias__row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; }
-
-.box-categorias {
-  width: 274px;
-  height: 171px;
-  overflow: hidden;
-  display: flex;
-  margin: 16px;
-  flex-wrap: wrap;
-  align-items: center;
+.card-categorias {
   background-color: blueviolet;
   border: solid 3px;
   border-top-color: #8c284e;
   border-left-color: #8c284e;
   border-right-color: #564892;
-  border-bottom-color: #564892;
-  position: relative; }
+  border-bottom-color: #564892; }
 
-.box-categorias h3, .box-categorias .h3 {
-  font-size: 1.2rem; }
+.card-categorias img {
+  min-width: 11rem;
+  width: 100%; }
 
-.img__titulo {
-  color: white;
-  position: absolute;
-  align-items: center;
-  text-align: center;
-  padding: 5px 80px;
-  overflow: hidden; }
-
-.img__titulo:hover {
-  color: #d126c9;
-  position: absolute;
-  align-items: center;
-  text-align: center;
+.card-categorias p:hover {
+  color: #fa44a8;
+  font-weight: 600;
   -webkit-transform: scale(1.3);
   transition: 1s; }
-
-.img__titulo a {
-  color: white;
-  text-decoration: none; }
-
-.img__titulo a:hover {
-  color: #d126c9;
-  align-items: center;
-  position: relative;
-  text-align: center; }
 
 /*############ Fin Categorias Index #############*/
 /*############ Inicio Productos #############*/
@@ -8044,7 +8011,6 @@ button:active button:hover .btn:active,
   justify-content: center;
   width: 255px;
   height: 350px;
-  margin: 30px 25px 0px 25px;
   border: 1px solid transparent;
   -moz-border-image: -moz-linear-gradient(top, #a2a2a21a 0%, #a2a2a2 100%);
   -webkit-border-image: -webkit-linear-gradient(top, #a2a2a21a 0%, #a2a2a2 100%);
@@ -8053,21 +8019,12 @@ button:active button:hover .btn:active,
   text-align: center; }
 
 .producto__row h4, .producto__row .h4 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: black; }
 
 .producto__img {
   width: 191px;
   height: 183px; }
-
-.productos__titulo {
-  color: black;
-  letter-spacing: 0.35em;
-  border: solid 3px black;
-  margin-top: 20px;
-  padding: 4px; }
-
-.productos__titulo h2, .productos__titulo .h2 {
-  font-size: 1.7rem; }
 
 .productos__row--etiquetas {
   width: 100%;
@@ -8076,7 +8033,7 @@ button:active button:hover .btn:active,
   justify-content: space-between; }
 
 .producto__precio {
-  background-image: url(../img/precio.png);
+  background-image: url(/img/productos/precio.png);
   width: 126px;
   height: 48px;
   text-align: center;
@@ -8085,7 +8042,7 @@ button:active button:hover .btn:active,
   color: white; }
 
 .producto__carrito {
-  background-image: url(../img/carrito.png);
+  background-image: url(/img/productos/carrito.png);
   width: 85px;
   height: 31px;
   text-align: center;
@@ -8104,13 +8061,11 @@ button:active button:hover .btn:active,
 /*############ Fin Productos #############*/
 /*############ Inicio Producto Destacado #############*/
 .site-destacado {
-  background-image: url(../img/fondodestacado.jpg);
+  background-image: url(/img/destacado/fondodestacado.jpg);
   margin-top: 90px; }
 
-.image_ps5 {
-  width: 100%;
-  max-width: 500px;
-  padding-top: 35px; }
+.img-destacado {
+  max-width: 100%; }
 
 /*############ Fin de Producto Destacado #############*/
 /*############ Inicio Servicio Tecnico #############*/
@@ -8164,14 +8119,17 @@ button:active button:hover .btn:active,
 
 @media only screen and (max-width: 1910px) {
   .header_area .main-menu .navbar {
-    padding: 1rem; }
-  .container {
-    max-width: 90%; }
-  .site-main .brand-area,
-  .site-main .services-area .services-title,
-  .site-main .about-area {
-    padding: 3% 4%; } }
+    padding: 1rem; } }
 
 @media only screen and (max-width: 320px) {
   .galeria {
     width: 80%; } }
+
+@media only screen and (max-width: 481px) {
+  .img-destacado {
+    width: 100%; } }
+
+@media only screen and (max-width: 1200px) {
+  .producto__row {
+    width: 230px;
+    height: 350px; } }

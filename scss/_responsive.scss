@@ -14,7 +14,6 @@
             font-size: 30px;
         }
 
-
 }
 
 @media only screen and (max-width: 768px){
@@ -31,22 +30,24 @@
     .header_area .main-menu .navbar{
         padding: 1rem;
     }
-
-    .container{
-        max-width: 90%;
-    }
-
-    .site-main .brand-area,
-    .site-main .services-area .services-title,
-    .site-main .about-area{
-        padding: 3% 4%;
-    }
-
-
 }
 
 @media only screen and (max-width: 320px){
     .galeria{
         width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 481px){
+    .img-destacado {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .producto__row {
+        width: 230px;
+        height: 350px;
     }
 }

@@ -142,7 +142,7 @@ button:active button:hover .btn:active,
     width: 100%;
 }
 
-.site-main .site-banner .banner-image{
+.site-main .site-banner .banner-image {
     text-align: center;
 }
 
@@ -186,70 +186,30 @@ button:active button:hover .btn:active,
     padding: 0 15px;
 }
 
-.categorias__row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.box-categorias {
-    width: 274px;
-    height: 171px;
-    overflow: hidden;
-    display: flex;
-    margin: 16px;
-    flex-wrap: wrap;
-    align-items: center;
+.card-categorias {
     background-color: blueviolet;
     border: solid 3px;
     border-top-color: #8c284e;
     border-left-color: #8c284e;
     border-right-color: #564892;
     border-bottom-color: #564892;
-    position: relative;
 }
 
-.box-categorias h3 {
-    font-size: 1.2rem;
+.card-categorias img {
+    min-width: 11rem;
+    width: 100%;
 }
 
-.img__titulo {
-    color: white;
-    position: absolute;
-    align-items: center;
-    text-align: center;
-    padding: 5px 80px;
-    overflow: hidden;
-}
-
-.img__titulo:hover {
-    color: rgb(209, 38, 201);
-    position: absolute;
-    align-items: center;
-    text-align: center;
+.card-categorias p:hover {
+    color: rgb(250, 68, 168);
+    font-weight: 600;
     -webkit-transform: scale(1.3);
     transition: 1s;
 }
 
-.img__titulo a {
-    color: white;
-    text-decoration: none;
-}
-
-.img__titulo a:hover {
-    color: rgb(209, 38, 201);
-    align-items: center;
-    position: relative;
-    text-align: center;
-}
-
-
 /*############ Fin Categorias Index #############*/
 
 /*############ Inicio Productos #############*/
-
-
 
 .producto__row {
     display: flex;
@@ -257,7 +217,6 @@ button:active button:hover .btn:active,
     justify-content: center;
     width: 255px;
     height: 350px;
-    margin: 30px 25px 0px 25px;
     border: 1px solid transparent;
     -moz-border-image: -moz-linear-gradient(top, #a2a2a21a 0%, #a2a2a2 100%);
     -webkit-border-image: -webkit-linear-gradient(top, #a2a2a21a 0%, #a2a2a2 100%);
@@ -268,23 +227,12 @@ button:active button:hover .btn:active,
 
 .producto__row h4 {
     font-size: 1rem;
+    color: black;
 }
 
 .producto__img {
     width: 191px;
     height: 183px;
-}
-
-.productos__titulo {
-    color: rgb(0, 0, 0);
-    letter-spacing: 0.35em;
-    border: solid 3px rgb(0, 0, 0);
-    margin-top: 20px;
-    padding: 4px;
-}
-
-.productos__titulo h2 {
-    font-size: 1.7rem;
 }
 
 .productos__row--etiquetas {
@@ -295,7 +243,7 @@ button:active button:hover .btn:active,
 }
 
 .producto__precio {
-    background-image: url(../img/precio.png);
+    background-image: url(/img/productos/precio.png);
     width: 126px;
     height: 48px;
     text-align: center;
@@ -305,7 +253,7 @@ button:active button:hover .btn:active,
 }
 
 .producto__carrito {
-    background-image: url(../img/carrito.png);
+    background-image: url(/img/productos/carrito.png);
     width: 85px;
     height: 31px;
     text-align: center;
@@ -329,14 +277,12 @@ button:active button:hover .btn:active,
 /*############ Inicio Producto Destacado #############*/
 
 .site-destacado {
-    background-image: url(../img/fondodestacado.jpg);
+    background-image: url(/img/destacado/fondodestacado.jpg);
     margin-top: 90px;
 }
 
-.image_ps5 {
-    width: 100%;
-    max-width: 500px;
-    padding-top: 35px;
+.img-destacado {
+    max-width: 100%;
 }
 
 
@@ -360,7 +306,7 @@ button:active button:hover .btn:active,
     background: rgba(248, 252, 253, 0.973);
     padding: 2rem 0;
     width: 16rem;
-    margin: 2rem ;
+    margin: 2rem;
     transition: box-shadow .7s ease;
 }
 
@@ -375,7 +321,7 @@ button:active button:hover .btn:active,
 
 
 
-.logo-servicio{
+.logo-servicio {
     width: 100%;
     max-width: 350px;
     margin-bottom: 15px;
@@ -385,6 +331,6 @@ button:active button:hover .btn:active,
 /*############ Fin de Servicio Tecnico #############*/
 
 
-.site-main .site-servicios .row{
+.site-main .site-servicios .row {
     justify-content: center;
 }
