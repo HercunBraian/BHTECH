@@ -156,6 +156,10 @@ button:active button:hover .btn:active,
 
 /*############ Inicio Categorias #############*/
 
+.categorias{
+    margin-bottom: 50px;
+}
+
 .cat-titulo h2 {
     color: rgb(0, 0, 0);
     letter-spacing: 0.05em;
@@ -210,6 +214,10 @@ button:active button:hover .btn:active,
 /*############ Fin Categorias Index #############*/
 
 /*############ Inicio Productos #############*/
+
+.productos{
+    margin-bottom: 50px;
+}
 
 .producto__row {
     display: flex;
@@ -278,12 +286,19 @@ button:active button:hover .btn:active,
 
 .site-destacado {
     background-image: url(/img/destacado/fondodestacado.jpg);
-    margin-top: 90px;
+    margin-top: 40px;
 }
 
-.img-destacado {
-    max-width: 100%;
+.img-destacado{
+    border: 1px solid #322749;
+    
+    transition: transform .2s; /* Animation */
 }
+
+.img-destacado:hover {
+    overflow: hidden;
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 
 /*############ Fin de Producto Destacado #############*/
@@ -318,8 +333,6 @@ button:active button:hover .btn:active,
 .site-main>.site-servicios .servicios:hover {
     box-shadow: var(--box-shadow);
 }
-
-
 
 .logo-servicio {
     width: 100%;
