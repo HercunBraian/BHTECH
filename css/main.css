@@ -8046,7 +8046,7 @@ button:active button:hover .btn:active,
   justify-content: space-between; }
 
 .producto__precio {
-  background-image: url(/img/productos/precio.png);
+  background-image: url(../img/productos/precio.png);
   width: 126px;
   height: 48px;
   text-align: center;
@@ -8055,7 +8055,7 @@ button:active button:hover .btn:active,
   color: white; }
 
 .producto__carrito {
-  background-image: url(/img/productos/carrito.png);
+  background-image: url(../img/productos/carrito.png);
   width: 85px;
   height: 31px;
   text-align: center;
@@ -8074,7 +8074,7 @@ button:active button:hover .btn:active,
 /*############ Fin Productos #############*/
 /*############ Inicio Producto Destacado #############*/
 .site-destacado {
-  background-image: url(/img/destacado/fondodestacado.jpg);
+  background-image: url(../img/destacado/fondodestacado.jpg);
   margin-top: 40px; }
 
 .img-destacado {
