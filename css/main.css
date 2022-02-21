@@ -7931,7 +7931,8 @@ button:active button:hover .btn:active,
 /*############ Fin Navegacion #############*/
 /*############ Inicio Banner #############*/
 .site-banner {
-  background-image: linear-gradient(to right, #322749, #42284d, #52294e, #62294d, #712a4a); }
+  background-image: linear-gradient(to right, #322749, #42284d, #52294e, #62294d, #712a4a);
+  padding-bottom: 30px; }
 
 .site-main .site-banner .site-title {
   padding-top: 2%;
