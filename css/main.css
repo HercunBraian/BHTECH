@@ -8119,6 +8119,76 @@ button:active button:hover .btn:active,
   margin-bottom: 15px; }
 
 /*############ Fin de Servicio Tecnico #############*/
+/*########### Inicio Contacto ##############*/
+.formulario__contacto {
+  padding: 30px;
+  margin-top: 50px;
+  background-color: #53294e;
+  border-image: linear-gradient(to bottom, #67299400 0%, #682994 100%);
+  border-image-slice: 1;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+
+.formulario h2, .formulario .h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: white;
+  text-align: center; }
+
+.form {
+  width: 100%;
+  background-color: #44214075;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid;
+  font-size: 1rem; }
+
+.textarea {
+  width: 100%; }
+
+.formulario__contacto p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white; }
+
+.botonform {
+  background-color: #c20aaa;
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 10px 5px;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 480px;
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center; }
+
+.botonform:hover {
+  background-color: #e20bc6;
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 10px 5px;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 480px;
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center; }
+
+/*########### Fin de Contacto ##############*/
 /*############ Inicio Media Query - Responsive #############*/
 @media only screen and (max-width: 340px) {
   .header_area .main-menu .navbar,
