@@ -1,3 +1,4 @@
+/*############ Vendors Bootstrap #############*/
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7809,7 +7810,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-/*############ IMPORT CSS VARIABLES #############*/
+/*############ Resets #############*/
 html, body {
   margin: 0;
   padding: 0;
@@ -7818,23 +7819,11 @@ html, body {
   height: 100%; }
 
 /*############ Variables CSS #############*/
-:root {
-  --active:#b31b56;
-  --primary-color: #4458dc;
-  --primary-color2: #854fee;
-  --title-color: #f8f2f2;
-  --text-color: #777777;
-  --border-color: #201f1f17;
-  --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
-  --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
-  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-  --roboto: 'Roboto', sans-serif; }
-
 .text-deconone {
   text-decoration: none; }
 
-/*############ IMPORT CSS MAIN #############*/
-/*############ Inicio Navegacion #############*/
+/*############ Utils Mixins #############*/
+/*############ Navegacion #############*/
 .navbar {
   background-image: linear-gradient(to right, #322749, #42284d, #52294e, #62294d, #712a4a);
   box-shadow: 1px 10px 26px -11px rgba(0, 0, 0, 0.75);
@@ -7843,24 +7832,32 @@ html, body {
 
 .header_area .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 5rem; }
+  @media only screen and (max-width: 340px) {
+    .header_area .main-menu .navbar .navbar-brand {
+      padding: 2%;
+      margin: 0%; } }
 
 .header_area .main-menu .navbar {
   padding: 0rem 20rem; }
+  @media only screen and (max-width: 1910px) {
+    .header_area .main-menu .navbar {
+      padding: 1rem; } }
 
 .navbar-nav {
   margin: auto; }
 
 .header_area .main-menu .nav-item .nav-link {
-  font: normal 500 15px/2px var(--roboto);
+  font: normal 500 15px/2px;
+  font-family: "Roboto";
   text-transform: uppercase;
   padding: 1.7rem;
-  color: var(--title-color); }
+  color: #f8f2f2; }
 
 .header_area .main-menu .navbar-nav .active a {
-  color: var(--active); }
+  color: #b31b56; }
 
 .header_area .main-menu .navbar-nav a:hover {
-  color: var(--active); }
+  color: #b31b56; }
 
 .navbar_fixed {
   position: fixed;
@@ -7873,63 +7870,8 @@ html, body {
   z-index: 999;
   transition: background 1s ease; }
 
-/* Botones*/
-.button {
-  padding: .8rem 2.2rem;
-  font: normal 500 16px/20px var(--roboto);
-  position: relative;
-  border: 3px solid transparent;
-  border-radius: 4px; }
-
-.button.primary-button {
-  background: var(--gradient-color);
-  background-clip: padding-box;
-  color: whitesmoke;
-  transition: background .6s ease;
-  box-shadow: var(--box-shadow); }
-
-.button.primary-button:hover {
-  background: whitesmoke;
-  background-clip: padding-box;
-  color: black; }
-
-.button.primary-button::after,
-.button.secondary-button::after {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  bottom: -2px;
-  right: -2px;
-  background: var(--gradient-color);
-  content: ' ';
-  z-index: -1;
-  border-radius: 4px; }
-
-.button.secondary-button {
-  background: white;
-  background-clip: padding-box;
-  transition: background .6s ease; }
-
-.button.secondary-button:hover {
-  background: var(--gradient-color);
-  color: whitesmoke;
-  box-shadow: var(--box-shadow); }
-
-p.para {
-  color: var(--text-color);
-  font: normal 500 16px/25px var(--roboto); }
-
-.font-roboto {
-  font-family: var(--roboto); }
-
-button:focus,
-button:active button:hover .btn:active,
-.btn.active {
-  outline: 0px !important;
-  box-shadow: none !important; }
-
 /*############ Fin Navegacion #############*/
-/*############ Inicio Banner #############*/
+/*############ Header #############*/
 .site-banner {
   background-image: linear-gradient(to right, #322749, #42284d, #52294e, #62294d, #712a4a);
   padding-bottom: 30px; }
@@ -7941,12 +7883,15 @@ button:active button:hover .btn:active,
 .site-main .site-banner .site-title h1, .site-main .site-banner .site-title .h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: aliceblue; }
+  color: #f8f2f2; }
+  @media only screen and (max-width: 340px) {
+    .site-main .site-banner .site-title h1, .site-main .site-banner .site-title .h1 {
+      font-size: 30px; } }
 
 .site-main .site-banner .site-title h2, .site-main .site-banner .site-title .h2 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: aliceblue; }
+  color: #f8f2f2; }
 
 .site-main .site-banner .site-title > img {
   padding: 1rem 2rem;
@@ -7962,12 +7907,12 @@ button:active button:hover .btn:active,
   width: 100%; }
 
 /*############ Fin Banner #############*/
-/*############ Inicio Categorias #############*/
+/*############ Categorias #############*/
 .categorias {
   margin-bottom: 50px; }
 
 .cat-titulo h2, .cat-titulo .h2 {
-  color: black;
+  color: #030303;
   letter-spacing: 0.05em;
   margin-top: 20px;
   padding: 4px; }
@@ -7992,30 +7937,54 @@ button:active button:hover .btn:active,
   background: #fff;
   padding: 0 15px; }
 
-.card-categorias {
+.card-categorias, .img-categoria {
   background-color: blueviolet;
   border: solid 3px;
   border-top-color: #8c284e;
   border-left-color: #8c284e;
   border-right-color: #564892;
-  border-bottom-color: #564892; }
+  border-bottom-color: #564892;
+  position: relative;
+  overflow: hidden; }
 
-.card-categorias img {
-  min-width: 11rem;
-  width: 100%; }
+.img-categoria {
+  min-width: 11rem; }
 
-.card-categorias a {
+.card-categorias:hover, .img-categoria:hover {
+  background-color: blueviolet;
+  position: relative;
+  opacity: 0.5;
+  filter: alpha(opacity=100);
+  zoom: 1; }
+
+.card-categorias a, .img-categoria a {
   text-decoration: none;
   color: #ffffff; }
 
-.card-categorias a:hover {
+.card-categorias a:hover, .img-categoria a:hover {
   color: #fa44a8;
   font-weight: 600;
   -webkit-transform: scale(1.3);
   transition: 1s; }
 
-/*############ Fin Categorias Index #############*/
-/*############ Inicio Productos #############*/
+/*############ Fin Categorias#############*/
+/*############ Inicio Producto Destacado #############*/
+.site-destacado {
+  background-image: url(../img/destacado/fondodestacado.jpg);
+  margin-top: 40px; }
+
+.img-destacado {
+  border: 1px solid #322749;
+  transition: transform .2s;
+  /* Animation */ }
+
+.img-destacado:hover {
+  overflow: hidden;
+  transform: scale(1.25);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
+
+/*############ Fin de Producto Destacado #############*/
+/*############ Productos #############*/
 .productos {
   margin-bottom: 50px; }
 
@@ -8073,52 +8042,59 @@ button:active button:hover .btn:active,
   color: black; }
 
 /*############ Fin Productos #############*/
-/*############ Inicio Producto Destacado #############*/
-.site-destacado {
-  background-image: url(../img/destacado/fondodestacado.jpg);
-  margin-top: 40px; }
+/*############ Botones #############*/
+/* ---- Boton Header ----*/
+.button, .primary-button, .secondary-button {
+  padding: .8rem 2.2rem;
+  font: normal 500 16px/20px;
+  font-family: "Roboto";
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px; }
 
-.img-destacado {
-  border: 1px solid #322749;
-  transition: transform .2s;
-  /* Animation */ }
+.primary-button {
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background .6s ease;
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205); }
 
-.img-destacado:hover {
-  overflow: hidden;
-  transform: scale(1.25);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
+.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black; }
 
-/*############ Fin de Producto Destacado #############*/
-/*############ Inicio Servicio Tecnico #############*/
-.site-servicios {
-  margin-top: 100px; }
+.primary-button::after,
+.secondary-button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  content: ' ';
+  z-index: -1;
+  border-radius: 4px; }
 
-.site-servicios .services-title {
-  padding: 0; }
+.secondary-button {
+  background: white;
+  background-clip: padding-box;
+  transition: background .6s ease; }
 
-.site-servicios .services-title h1, .site-servicios .services-title .h1 {
-  font-size: 35px; }
+.secondary-button:hover {
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  color: whitesmoke;
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205); }
 
-.site-main > .site-servicios .servicios {
-  background: rgba(248, 252, 253, 0.973);
-  padding: 2rem 0;
-  width: 16rem;
-  margin: 2rem;
-  transition: box-shadow .7s ease; }
+.font-roboto {
+  font-family: "Roboto"; }
 
-.site-main > .site-servicios p {
-  width: 70%;
-  margin: auto; }
+button:focus,
+button:active button:hover .btn:active,
+.btn.active {
+  outline: 0px !important;
+  box-shadow: none !important; }
 
-.site-main > .site-servicios .servicios:hover {
-  box-shadow: var(--box-shadow); }
-
-.logo-servicio {
-  width: 100%;
-  max-width: 350px;
-  margin-bottom: 15px; }
-
-/*############ Fin de Servicio Tecnico #############*/
 /*########### Inicio Contacto ##############*/
 .formulario__contacto {
   padding: 30px;
@@ -8172,48 +8148,6 @@ button:active button:hover .btn:active,
   text-align: center; }
 
 .botonform:hover {
-  background-color: #e20bc6;
-  border: 0;
-  border-radius: 10px;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-flex;
-  margin: 10px 5px;
-  font-size: 16px;
-  font-weight: 600;
-  max-width: 480px;
-  min-height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center; }
+  background-color: #e20bc6; }
 
 /*########### Fin de Contacto ##############*/
-/*############ Inicio Media Query - Responsive #############*/
-@media only screen and (max-width: 340px) {
-  .header_area .main-menu .navbar,
-  .header_area .main-menu .navbar .navbar-brand,
-  .site-main .subscribe-us-area .subscribe {
-    padding: 2%;
-    margin: 0%; }
-  .site-main .site-banner .site-title h1, .site-main .site-banner .site-title .h1 {
-    font-size: 30px; } }
-
-@media only screen and (max-width: 768px) {
-  .site-main .site-servicios {
-    justify-content: center; }
-  .logo_footer {
-    width: 100%; } }
-
-@media only screen and (max-width: 1910px) {
-  .header_area .main-menu .navbar {
-    padding: 1rem; } }
-
-@media only screen and (max-width: 320px) {
-  .galeria {
-    width: 80%; } }
-
-@media only screen and (max-width: 1200px) {
-  .producto__row {
-    width: 230px;
-    height: 350px; } }

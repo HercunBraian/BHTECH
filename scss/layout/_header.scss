@@ -1,0 +1,42 @@
+.site-banner {
+    background-image: linear-gradient(to right, #322749, #42284d, #52294e, #62294d, #712a4a);
+    padding-bottom: 30px;
+}
+
+.site-main .site-banner .site-title {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.site-main .site-banner .site-title h1 {
+    font-size: map-get($titulos,tFuente);
+    font-weight: map-get($titulos,fWeight);
+    color: map-get($titulos,colorPrimario);
+    @include celular{
+        font-size: 30px;
+    }
+}
+
+.site-main .site-banner .site-title h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: map-get($titulos,colorPrimario);
+}
+
+.site-main .site-banner .site-title>img {
+    padding: 1rem 2rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+.site-main .site-banner .banner-image {
+    text-align: center;
+}
+
+.site-main .site-banner .banner-image>img {
+    padding: 3rem 2rem;
+    max-width: 450px;
+    width: 100%;
+}
+
+/*############ Fin Banner #############*/

@@ -1,0 +1,34 @@
+/*############ Vendors Bootstrap #############*/
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/*############ Resets #############*/
+@import "./base/reset";
+
+/*############ Variables CSS #############*/
+@import "./utils/variables";
+
+/*############ Utils Mixins #############*/
+@import "./utils/mixins";
+
+/*############ Navegacion #############*/
+@import "./layout/nav";
+
+/*############ Header #############*/
+@import "./layout/header";
+
+/*############ Categorias #############*/
+@import "./pages/index";
+
+/*############ Productos #############*/
+@import "./components/productos";
+
+/*############ Botones #############*/
+@import "./components/buttons";
+
+/*########### Inicio Contacto ##############*/
+@import "./pages/contacto"
+
+
+
+
+

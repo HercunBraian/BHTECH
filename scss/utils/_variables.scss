@@ -1,0 +1,23 @@
+
+.text-deconone{
+    text-decoration: none;
+}
+
+$estilos:(
+    activo:#b31b56,
+    colorPrimario: #4458dc,
+    colorSecundario: #854fee,
+    linkColor: #f8f2f2,
+    mainColor: black,
+    gredientBackground: linear-gradient(90deg, #4458dc 0%, #854fee 100%),
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205),
+    fuente: 'Roboto'
+);
+
+$titulos:(
+    colorPrimario: #f8f2f2,
+    colorSecundario: #030303,
+    letterSpacing: 0.05em,
+    tFuente: 2.5rem,
+    fWeight: 700
+);
