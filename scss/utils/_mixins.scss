@@ -8,5 +8,29 @@
     @media only screen and (max-width: 1910px){
         @content;
     }
-    
 }
+
+@mixin portatil{
+    @media only screen and (max-width: 1199px){
+        @content;
+    }
+}
+
+@mixin portatil2{
+    @media only screen and (max-width: 991px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media only screen and (max-width: 767px){
+        @content;
+    }
+}
+
+@mixin celular{
+    @media only screen and (max-width: 575px){
+        @content;
+    }
+}
+
