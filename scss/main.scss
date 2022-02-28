@@ -1,5 +1,8 @@
 /*############ Vendors Bootstrap #############*/
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./vendors/bootstrap";
+
+/*############ Vendors Bootstrap #############*/
+@import "./vendors/aos";
 
 /*############ Resets #############*/
 @import "./base/reset";
