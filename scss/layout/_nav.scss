@@ -32,6 +32,14 @@
     color: map-get($estilos,linkColor);
 }
 
+.link-footer{
+    color: map-get($estilos,linkColor); 
+}
+
+.link-footer a:hover{
+    color: map-get($estilos,linkColor); 
+}
+
 .header_area .main-menu .navbar-nav .active a {
     color: map-get($estilos,activo);
 }

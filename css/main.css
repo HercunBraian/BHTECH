@@ -9110,6 +9110,12 @@ html, body {
   padding: 1.7rem;
   color: #f8f2f2; }
 
+.link-footer {
+  color: #f8f2f2; }
+
+.link-footer a:hover {
+  color: #f8f2f2; }
+
 .header_area .main-menu .navbar-nav .active a {
   color: #b31b56; }
 
