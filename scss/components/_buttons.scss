@@ -3,38 +3,44 @@
 .button {
     padding: .8rem 2.2rem;
     font: normal 500 16px/20px;
-    font-family: map-get($estilos,fuente);
+    font-family: map-get($estilos, fuente);
     position: relative;
     border: 3px solid transparent;
     border-radius: 4px;
+
+    &:focus, 
+    &:active,
+    &:hover{
+        outline: 0px !important;
+    box-shadow: none !important;
+    }
 }
 
 .primary-button {
     @extend .button;
-    background: map-get($estilos,gredientBackground);
+    background: map-get($estilos, gredientBackground);
     background-clip: padding-box;
     color: whitesmoke;
     transition: background .6s ease;
-    box-shadow: map-get($estilos,box-shadow);
-}
+    box-shadow: map-get($estilos, box-shadow);
 
-.primary-button:hover {
-    background: whitesmoke;
-    background-clip: padding-box;
-    color: black;
-}
+    &:hover {
+        background: whitesmoke;
+        background-clip: padding-box;
+        color: black;
+    }
 
-.primary-button::after,
-.secondary-button::after {
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    bottom: -2px;
-    right: -2px;
-    background: map-get($estilos,gredientBackground);
-    content: ' ';
-    z-index: -1;
-    border-radius: 4px;
+    &::after {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        bottom: -2px;
+        right: -2px;
+        background: map-get($estilos, gredientBackground);
+        content: ' ';
+        z-index: -1;
+        border-radius: 4px;
+    }
 }
 
 .secondary-button {
@@ -42,21 +48,27 @@
     background: white;
     background-clip: padding-box;
     transition: background .6s ease;
-}
 
-.secondary-button:hover {
-    background: map-get($estilos,gredientBackground);
-    color: whitesmoke;
-    box-shadow: map-get($estilos,box-shadow);
+    &:hover {
+        background: map-get($estilos, gredientBackground);
+        color: whitesmoke;
+        box-shadow: map-get($estilos, box-shadow);
+    }
+
+    &::after{
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        bottom: -2px;
+        right: -2px;
+        background: map-get($estilos, gredientBackground);
+        content: ' ';
+        z-index: -1;
+        border-radius: 4px;
+    }
 }
 
 .font-roboto {
-    font-family: map-get($estilos,fuente);
+    font-family: map-get($estilos, fuente);
 }
 
-button:focus,
-button:active button:hover .btn:active,
-.btn.active {
-    outline: 0px !important;
-    box-shadow: none !important;
-}

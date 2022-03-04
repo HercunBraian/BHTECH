@@ -9178,22 +9178,7 @@ html, body {
   margin-top: 20px;
   padding: 4px; }
 
-#cpugamer {
-  padding-top: 100px; }
-
-#perifericos {
-  padding-top: 100px; }
-
-#consolas {
-  padding-top: 100px; }
-
-#placasvideo {
-  padding-top: 100px; }
-
-#pcgamers {
-  padding-top: 100px; }
-
-#rams {
+#cpugamer, #perifericos, #consolas, #placasvideo, #pcgamers, #rams {
   padding-top: 100px; }
 
 .cat-titulo .linea {
@@ -9335,59 +9320,51 @@ html, body {
 /*############ Productos #############*/
 .productos {
   margin-bottom: 50px; }
-
-.producto__row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 255px;
-  height: 350px;
-  border: 1px solid transparent;
-  -moz-border-image: -moz-linear-gradient(top, #a2a2a21a 0%, #a2a2a2 100%);
-  -webkit-border-image: -webkit-linear-gradient(top, #a2a2a21a 0%, #a2a2a2 100%);
-  border-image: linear-gradient(to bottom, #a2a2a21a 0%, #a2a2a2 100%);
-  border-image-slice: 1;
-  text-align: center; }
-
-.producto__row h4, .producto__row .h4 {
-  font-size: 1rem;
-  color: black; }
-
-.producto__img {
-  width: 191px;
-  height: 183px; }
-
-.productos__row--etiquetas {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; }
-
-.producto__precio {
-  background-image: url(../img/productos/precio.png);
-  width: 126px;
-  height: 48px;
-  text-align: center;
-  padding-top: 10px;
-  font-size: 1.1rem;
-  color: white; }
-
-.producto__carrito {
-  background-image: url(../img/productos/carrito.png);
-  width: 85px;
-  height: 31px;
-  text-align: center;
-  padding-top: 8px;
-  padding-right: 17px;
-  font-size: 0.8rem;
-  color: white; }
-
-.producto__carrito a {
-  color: white;
-  text-decoration: none; }
-
-.producto__carrito a:hover {
-  color: black; }
+  .productos__row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 255px;
+    height: 350px;
+    border: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, #a2a2a21a 0%, #a2a2a2 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, #a2a2a21a 0%, #a2a2a2 100%);
+    border-image: linear-gradient(to bottom, #a2a2a21a 0%, #a2a2a2 100%);
+    border-image-slice: 1;
+    text-align: center; }
+    .productos__row h4, .productos__row .h4 {
+      font-size: 1rem;
+      color: black; }
+    .productos__row--etiquetas {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+  .productos__img {
+    width: 191px;
+    height: 183px; }
+  .productos__precio {
+    background-image: url(../img/productos/precio.png);
+    width: 126px;
+    height: 48px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.1rem;
+    color: white; }
+  .productos__carrito {
+    background-image: url(../img/productos/carrito.png);
+    width: 85px;
+    height: 31px;
+    text-align: center;
+    padding-top: 8px;
+    padding-right: 17px;
+    font-size: 0.8rem;
+    color: white; }
+    .productos__carrito a {
+      color: white;
+      text-decoration: none; }
+      .productos__carrito a:hover {
+        color: black; }
 
 /*############ Fin Productos #############*/
 /*############ Botones #############*/
@@ -9399,6 +9376,9 @@ html, body {
   position: relative;
   border: 3px solid transparent;
   border-radius: 4px; }
+  .button:focus, .primary-button:focus, .secondary-button:focus, .button:active, .primary-button:active, .secondary-button:active, .button:hover, .primary-button:hover, .secondary-button:hover {
+    outline: 0px !important;
+    box-shadow: none !important; }
 
 .primary-button {
   background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
@@ -9406,42 +9386,42 @@ html, body {
   color: whitesmoke;
   transition: background .6s ease;
   box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205); }
-
-.primary-button:hover {
-  background: whitesmoke;
-  background-clip: padding-box;
-  color: black; }
-
-.primary-button::after,
-.secondary-button::after {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  bottom: -2px;
-  right: -2px;
-  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
-  content: ' ';
-  z-index: -1;
-  border-radius: 4px; }
+  .primary-button:hover {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black; }
+  .primary-button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px; }
 
 .secondary-button {
   background: white;
   background-clip: padding-box;
   transition: background .6s ease; }
-
-.secondary-button:hover {
-  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
-  color: whitesmoke;
-  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205); }
+  .secondary-button:hover {
+    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    color: whitesmoke;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205); }
+  .secondary-button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px; }
 
 .font-roboto {
   font-family: "Roboto"; }
-
-button:focus,
-button:active button:hover .btn:active,
-.btn.active {
-  outline: 0px !important;
-  box-shadow: none !important; }
 
 /*########### Inicio Contacto ##############*/
 .formulario__contacto {
@@ -9452,12 +9432,15 @@ button:active button:hover .btn:active,
   border-image-slice: 1;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
-
-.formulario h2, .formulario .h2 {
-  margin-top: 30px;
-  font-size: 2rem;
-  color: white;
-  text-align: center; }
+  .formulario__contacto h2, .formulario__contacto .h2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center; }
+  .formulario__contacto p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white; }
 
 .form {
   width: 100%;
@@ -9471,12 +9454,6 @@ button:active button:hover .btn:active,
 
 .textarea {
   width: 100%; }
-
-.formulario__contacto p {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: white; }
 
 .botonform {
   background-color: #c20aaa;
@@ -9494,8 +9471,7 @@ button:active button:hover .btn:active,
   padding-left: 20px;
   padding-right: 20px;
   text-align: center; }
-
-.botonform:hover {
-  background-color: #e20bc6; }
+  .botonform:hover {
+    background-color: #e20bc6; }
 
 /*########### Fin de Contacto ##############*/

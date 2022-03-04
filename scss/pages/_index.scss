@@ -5,31 +5,10 @@
     letter-spacing: map-get($titulos,letterSpacing);
     margin-top: 20px;
     padding: 4px;
-
 }
 
-#cpugamer{
+#cpugamer, #perifericos, #consolas, #placasvideo, #pcgamers, #rams {
     padding-top: 100px;
-}
-
-#perifericos{
-  padding-top: 100px;
-}
-
-#consolas{
-  padding-top: 100px;
-}
-
-#placasvideo{
-  padding-top: 100px;
-}
-
-#pcgamers{
-  padding-top: 100px;
-}
-
-#rams{
-  padding-top: 100px;
 }
 
 .cat-titulo .linea {
