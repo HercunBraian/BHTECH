@@ -9293,7 +9293,7 @@ html, body {
 /*############ Fin Categorias#############*/
 /*############ Inicio Producto Destacado #############*/
 .site-destacado {
-  background-image: url(../img/destacado/fondodestacado.jpg);
+  background-image: url(../img/destacado/fondodestacado.webp);
   margin-top: 40px; }
 
 .img-destacado {
@@ -9344,7 +9344,7 @@ html, body {
     width: 191px;
     height: 183px; }
   .productos__precio {
-    background-image: url(../img/productos/precio.png);
+    background-image: url(../img/productos/precio.webp);
     width: 126px;
     height: 48px;
     text-align: center;
@@ -9352,7 +9352,7 @@ html, body {
     font-size: 1.1rem;
     color: white; }
   .productos__carrito {
-    background-image: url(../img/productos/carrito.png);
+    background-image: url(../img/productos/carrito.webp);
     width: 85px;
     height: 31px;
     text-align: center;
